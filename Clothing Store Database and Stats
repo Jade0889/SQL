@@ -1,0 +1,19 @@
+CREATE TABLE mystore (id INTEGER PRIMARY KEY, item TEXT, color TEXT, quantity INTEGER, condition TEXT, price INTEGER);
+
+INSERT INTO mystore VALUES (1, "shirt", "green", 8, "used", 10);
+INSERT INTO mystore VALUES (2, "jeans", "blue", 3, "new", 45 );
+INSERT INTO mystore VALUES (3, "booties", "black", 1, "new", 15);
+INSERT INTO mystore VALUES (4,"chapstick","clear", 45, "new", 2);
+INSERT INTO mystore VALUES (5, "flip flops", "black", 5, "new", 15);
+INSERT INTO mystore VALUES (6, "booties", "brown", 3, "new", 15);
+INSERT INTO mystore VALUES (7, "leather purse", "black", 1, "new", 75);
+INSERT INTO mystore VALUES (8, "toe socks", "rainbow", 10, "new", 5);
+INSERT INTO mystore VALUES (9, "leggings", "black", 8, "new", 20);
+INSERT INTO mystore VALUES (10, "hoodies", "purple", 2, "used", 25);
+INSERT INTO mystore VALUES (11, "watch", "silver", 1, "new", 65);
+INSERT INTO mystore VALUES (12, "earrings", "black", 4, "new", 10);
+INSERT INTO mystore VALUES (13, "trucker hats", "sparkle", 3, "new", 15);
+INSERT INTO mystore VALUES (14, "cowboy hat", "tan", 1, "new", 15);
+INSERT INTO mystore VALUES (15, "hoodies", "black", 2, "new", 25);
+
+SELECT item, price FROM mystore GROUP BY quantity;
